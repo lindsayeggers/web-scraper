@@ -65,7 +65,7 @@ class Scraper
       end
       { data: reviews }
     end
-  rescue ActiveRecord::InvalidRecord => e
+  rescue ActiveRecord::ActiveRecordError => e
     errors.add(:base, e.message)
     false
   end
