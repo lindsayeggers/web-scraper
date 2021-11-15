@@ -3,7 +3,7 @@
 require "rails_helper"
 RSpec.describe "ReviewsRequest", type: :request do
   describe "#collect" do
-    let(:stubbed_response) { Rails.root.join("spec", "fixtures", "html_response.rb") }
+    let(:stubbed_response) { Rails.root.join("spec", "fixtures", "html_response.html") }
 
     # rubocop:disable Layout/LineLength
     let(:output) do

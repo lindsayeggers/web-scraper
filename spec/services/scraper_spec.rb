@@ -26,7 +26,7 @@ RSpec.describe Scraper do
     end
 
     context "when required review attributes are missing" do
-      let(:stubbed_response) { Rails.root.join("spec", "fixtures", "invalid_html_response.rb") }
+      let(:stubbed_response) { Rails.root.join("spec", "fixtures", "invalid_html_response.html") }
 
       # rubocop:disable RSpec/AnyInstance
       before do
@@ -44,7 +44,7 @@ RSpec.describe Scraper do
     end
 
     context "when happy path is used" do
-      let(:stubbed_response) { Rails.root.join("spec", "fixtures", "html_response.rb") }
+      let(:stubbed_response) { Rails.root.join("spec", "fixtures", "html_response.html") }
       # rubocop:disable Layout/LineLength
       let(:output) do
         [
